@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+:root {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(215, 35%, 90%);
+}
+
+
+.grid {
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    top: 90px;
+    box-shadow: 1px 1px 8px -1px;
+    /* border: 2px solid red; */
+}
+.item {
+    padding: 1em 2em 0em 2em;
+}
+.item1 {
+    grid-column: 1 /3;
+    background-color: white;
+}
+.item2 {
+    background-color: hsl(179, 62%, 43%);
+    line-height: 0.8;
+    padding-bottom: 2em;
+}
+.item3 {
+    background-color: hsl(179, 57%, 52%);;
+}
+
+.top > h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+
+.top > h5 {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.top  p {
+    width: 93%;
+    line-height: 1.9;
+    color:grey;
+    font-weight: 700;
+}
+
+
+.left h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.left > .price-month {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.left span {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.left .price-descrp {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    padding: 0.8em 6em;
+    margin-top: 10px;
+    border: none;
+    font-weight: 700;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+background-color: hsla(71, 73%, 54%, 0.8);
+}
+
+.right h5 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.right p {
+    color: rgb(237, 237, 237);
+    width: 15em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: auto;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    main {
+        margin-right: 4.5em;
+    }
+    button {
+        padding: 1rem 5rem;
+    }
+    .item {
+    width: 100%;
+    }
+    .item1 {
+        line-height: 1;
+        padding-bottom: 0.5em;
+        padding-left: 2em;
+    }
+    .item2 {
+        padding-bottom: 4em;
+    }
+    .item3 {
+        padding-bottom: 1em;
+    }
+}
+@media screen and (max-width: 420px) {
+    main {
+        width: 400px
+    }
+}
+
+
